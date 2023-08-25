@@ -1,4 +1,4 @@
 # TechVijay-Projects
 This repo for store my Project
 <br>
-Author- Vijay Kumar
+Author- Vijay Kumar(TechVijay)
