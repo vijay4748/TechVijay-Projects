@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock🕑</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+   </head>
+<body>
+    
+    <div id="clock">
+        <h1>Digital Clock🕑</h1>
+        <h2>The time is now</h2>
+        <div id="time">
+            <div><span id="hour">00</span><span>Hours</span></div>
+            <div><span id="minutes">00</span><span>Minutes</span></div>
+            <div><span id="seconds">00</span><span>Seconds</span></div>
+            <div><span id="amPm">00</span><span>AM/PM</span></div>
+        </div>
+       
+    </div>
+   
+    <script>
+
+        swal("Hey! Welcome to my Digital Clock 🕐","Tech Vijay💯🧡","success");
+        function clock(){
+            var hours=document.getElementById('hour');
+            var minutes=document.getElementById('minutes');
+            var seconds=document.getElementById('seconds');
+            var amPm =document.getElementById('amPm')
+
+            
+            var h = new Date().getHours();
+            var m = new Date().getMinutes();
+            var s = new Date().getSeconds();
+            
+            var am = 'PM';
+          
+
+            //convert 24 hour into to 12 hour format with AM:PM indicator
+            // if(h > 12)
+            // {
+            //     h = h - 12;
+            //     var am = 'AM';
+
+            // }
+           am = h >= 12 ? "PM" : "AM";
+
+            //add 0 to the  begning of a number less than 10
+            
+            h = h % 12;
+            h = h == 0 ? 12 : h;
+            h = ( h < 9) ? '0' + h : h;
+            m = ( m < 9) ? '0' + m : m;
+            s = ( s < 9) ? '0' + s : s;
+
+            hours.innerHTML  = h;
+            minutes.innerHTML = m;
+            seconds.innerHTML = s;
+            amPm.innerHTML = am;
+        };
+        var interval = setInterval(clock,1000);
+
+        
+    </script>
+</body>
+</html>

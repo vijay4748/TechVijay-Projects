@@ -1,0 +1,11 @@
+body {
+    background-color: #e2e2e1;
+}
+
+.cardBlock {
+    position: relative;
+    top: 100px;
+    box-shadow: -10px 9px 3px -2px rgba(0, 0, 0, 0.7);
+    -webkit-box-shadow: -10px 9px 3px -2px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: -10px 9px 3px -2px rgba(0, 0, 0, 0.7);
+}

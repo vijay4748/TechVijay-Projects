@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game:Guess Number</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row my-5">
+            <div class="col-lg-6 offset-3 border border-success p-0 m-auto">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <h3 id="gameTitle"> Guess the Number Game</h3>
+                    </div>
+                    <div class="card-body p-0">
+
+                        <!-- section1 -->
+                        <!-- button:generate Number -->
+                        <div id="section1">
+                            <img src="https://i.gifer.com/fyhz.gif" class="img-fluid" alt="cubemoving">
+                        
+                            <button onclick="generate_number_btn_click()" class="btn btn-warning btn-lg my-3">Generate
+                                Number</button>
+                        </div>
+
+
+
+  
+                               <!-- secion2 
+                             Guess number 
+                             img
+                             message                    
+                             input field
+                             check
+                         -->
+                        <div id="section2">
+                            <div class="row mt-5">
+                                <div class="col-12 text-center">
+
+                                    <h3 class="text-primary">Guess the Number between 1 to 6**</h3>
+                                    <h5 id="gen_num" class="text-success m-1"></h5>
+                                    <img class="img-fluid" src="https://ignite246.github.io/Number_Guess_Game/images/thinking.gif"
+                                        alt="">
+                                   
+
+                                    <div class="form-group">
+                                        <input id="field" type="text" placeholder="enter here" class="form-control mx-auto">
+                                    </div>
+                                    <button onclick="check_number()" class="btn btn-lg btn-info m-1">Check</button>
+                                </div>
+                              
+                            </div>
+                        </div>
+
+                    
+                                            <!-- section3 
+                        img
+                      heading:generating number
+                    -->
+                        <div class="container text-center section3" id="section3">
+                            <img src="https://thumbs.gfycat.com/SecondTartCygnet-size_restricted.gif" class="img-fluid"/>
+                                 
+                            <h2 class="text-white">Generating Number</h2>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="card-footer text-center bg-success text-white">
+                    <b>By Tech Vijay</b>
+                </div>
+            </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>

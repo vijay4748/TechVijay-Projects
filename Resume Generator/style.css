@@ -1,0 +1,25 @@
+/* #cv-form{
+    display: none;
+} */
+
+#cv-template{
+
+    display: none;
+}
+.my_img{
+    /* border: 1px solid red; */
+    height: 40%;
+    width: 55%;
+    border-radius: 50%;
+    border :5px solid white;
+    
+}
+.background{
+    background-color: aqua;
+}
+#color{
+    background-color: aqua !important;
+}
+label{
+    font-size: 25px;
+}
